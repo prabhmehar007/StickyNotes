@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    height: 12%;
+    background-color: #333333;
+    display: flex;
+}
+
+.grid{
+    padding: 1.5rem;
+    min-height: 88%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filter-container , .action-container{
+    height: 75%;
+    margin-left: 7rem;
+    margin-top: 1.5vh;
+    border-radius: 4px;
+    background-color: #444444;
+}
+
+
+.filter-container{
+    width: 20rem;
+    display: flex;
+    
+}
+
+.action-container{
+    width: 10rem;
+}
+
+
+.filter{
+    width: 25%;
+    height: 100%;
+    /* border: solid red 1px; */
+}
+
+.filter div{
+    height: 50%;
+    width: 50%;
+    /* background-color: aqua; */
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 2.25vh;
+    
+}
+
+.filter:hover{
+    background-color: #393939;
+}
+
+.pink-color-btn , .pink{
+    background-color: #d595aa;
+}
+
+.blue-color-btn , .blue{
+    background-color: #5ecdde;
+}
+.green-color-btn,.green{
+    background-color: #91e6c7;
+}
+.black-color-btn,.black{
+    background-color: black;
+}
+
+
+.action-container{
+    display: flex;
+}
+
+.add,.delete{
+    font-size: 3rem;
+    height: 100%; 
+    width: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.add{
+    font-size: 3.4rem;   
+    padding-top: .0725rem;
+}
+
+.delete{
+    font-size: 3rem;
+}
+
+.add:hover,.delete:hover{
+    background-color: #393939;
+}
+
+
+.delete-state , .selected-filter{
+    background-color: #393939!important;
+}
+
+
+
+.modal-container{
+    height: 20rem;
+    width: 40rem;
+    /* border: 1px solid; */
+    display: flex;
+    position: fixed;
+    top: calc((100vh - 20rem) / 2);
+    left: calc((100vw - 40rem) / 2);
+    box-shadow: 0px 5px 50px 20px #aaa;
+}
+
+.writing-area{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid; */
+    background-color: white;
+    padding: 2rem;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-area{
+    /* border: 1px solid; */
+    height: 100%;
+    width: 30%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-filter{
+    width: 50%;
+    border: solid 1px;
+    height: 3rem;
+    margin-bottom: 7px;
+    opacity: 0.7;
+}
+
+
+.modal-filter:hover{
+    opacity: 1;
+}
+
+
+.ticket{
+    height: 8rem;
+    width: 15rem;
+    border: solid 1px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.ticket-color{
+    width: 100%;
+    height: 5%;
+    /* background-color: red; */
+}
+
+.ticket-id{
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #989393;
+}
+
+.ticket-box{
+    height: 75%;s
+    width: 100%;
+    outline: none;
+    overflow: auto;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.active-modal-filter{
+    border: 5px solid white;
+    opacity: 1;
+}
+
+
+
+.writing-area{
+    overflow: auto;
+}
+
+
+@media (max-width:768px){
+    .ticket{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .add{
+        font-size: 4.6rem;
+    }
+
+    .delete{
+        font-size: 4.2rem;
+    }
+
+    .action-container{
+    }
+}
+
+
+@media (max-width:600px){
+    .filter-container , .action-container{
+        height: 64%;
+        margin-top: 2.2vh;
+        margin-left: 3rem;
+    }
+
+    .filter-container{
+        width: 12rem;
+    }
+    .action-container{
+        width: 5.5rem;
+    }
+
+    .modal-container{
+        height: 15rem;
+        width: 24rem;
+        top: calc((100vh - 15rem) / 2);
+        left: calc((100vw - 24rem) / 2);
+    }
+    
+    .add{
+        font-size: 3.4rem;
+    }
+    
+    .delete{
+        font-size: 3rem;
+    }
+
+}
+
+
